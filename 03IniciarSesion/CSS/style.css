@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image: url(../imagenes/fondo.jpg);
+    background-image: url(../Imagenes/fondo.jpg);
     background-size:cover;
     color: rgb(0,0,0);
     display: flex;
