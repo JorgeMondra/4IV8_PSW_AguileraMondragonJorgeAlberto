@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Examen</title>
+    <script src="JS/Formulario.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>Tabla Dinamica</h1>
+    </header>
+    <div class="tabla">
+        <form metdod="post" name="formulario" 
+        onreset="validar(this)" action="">
+            <br>
+            <p>
+                <br>
+                <label for="Costo">Valor del automóvil</label>
+                <input type="number" name="" id="Costos" min="100000" max="1000000">
+                <br><br>
+                <label for="Cuota">Cuota inicial</label>
+                <input type="number" id="cuotaInicial" min=>
+                <br><br>
+                <label for="periodo">Periodo </label>
+                <select name="select" id="meses">
+                    <option value="3" selected>3</option>
+                    <option value="6">6</option>
+                    <option value="9">9</option>
+                    <option value="12">12</option>
+                    <option value="18">18</option>
+                </select>
+                <label for="periodo"> meses</label>
+                <br><br>
+            </p>
+            <input type="reset" name="Generar Tabla" value="Generar Tabla" id="Calcular">
+        </form>
+    </div>
+    <div class="tabla">
+        <table id="lista" class="lista">
+                <tr>
+                    <td class="Operacion1">Total</td>   
+                    <td id="montoTotal" class="Operacion2"></td>
+                </tr>
+                <tr>
+                    <td class="Operacion2">Total a Pagar</td>
+                    <td id="montoPagado" class="Operacion2"></td>
+                </tr>
+                <tr>
+                    <td class="Operacion1">Restante</td>
+                    <td id="montoPendiente" class="Operacion1"></td>
+                </tr>
+                <tr>
+                    <td class="Operacion2">Duracion del plazo en meses</td>
+                    <td id="plazoMeses" class="Operacion2"></td>
+                </tr>
+                <tr>
+                    <td class="Operacion1">Taza de interes</td>
+                    <td id="tazaInteres" class="Operacion1"></td>
+                </tr>
+                <tr>
+                    <td class="Operacion2">Final</td>
+                    <td id="capitalFuturo" class="Operacion2"></td>
+                </tr>
+        </table>
+    </div>
+    <div class="footer">
+        <footer>
+             <br>
+             <br>
+             <p>Aguilera Mondragon Jorge Alberto 4IV8</p>
+        </footer>
+    </div>
+</body>
+</html>
