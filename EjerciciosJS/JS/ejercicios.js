@@ -1,3 +1,4 @@
+
 function ejercicio1()
 {
     let capital_final, capital_inicial;
@@ -49,6 +50,15 @@ function ejercicio4()
     document.formulario4.promedio_parciales.value = promedio_parciales;
 }
 
+function ejercicio5(){
+
+    var mujeres = parseInt(document.querySelector('#p5-input1').value);
+    var hombres = parseInt(document.querySelector('#p5-input2').value);
+    var totalAlumn = mujeres + hombres;
+    var porMuj = (mujeres * 100)/totalAlumn;
+    var porHom = (hombres * 100)/totalAlumn;
+    document.querySelector('#p5-output').textContent = 'Total de Alumnos: ' + totalAlumn + '\n' + 'Porcentaje de Mujeres: ' + porMuj + '%' + '\n' + 'Porcentaje de Hombres: ' + porHom + '%';
+}
 function ejercicio6()
 {
     let anno_actual, anno_de_nacimiento, dia_actual, dia_de_nacimiento, edad;
